@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -16,8 +17,9 @@ int main() {
 	
 	cout << endl;
 	cout << "hasil konversi:" <<endl;
-	cout << dtk << " " << "detik" << " " << "=" << " "<< hari << " "<<"hari" <<"-"<< jam <<" "<< "jam"<< "  " << menit <<" "<< "menit"<<" " << jumdet <<" "<< "detik";
+	cout << dtk << " " << "detik" << " " << "=" << hari << "hari" <<"-"<< jam <<"jam"<< "-" << menit <<"menit"<<"-" << jumdet <<"detik";
     
 }
+
 
 

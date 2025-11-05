@@ -2,22 +2,22 @@
 using namespace std;
 
 int main() {
-	int jam,menit;
-	int detik;
-	int hari;
+	int menit,jam;
+	int hari,dtk,jumdet;
 	
 
-	cout <<"Masukan angka >1 (dalam satuan detik) :";
-	cin >> detik;
+	cout <<"Masukan jumlah detik yang kamu inginkan:";
+	cin >> dtk;
 	
-    hari=detik/86400;
-	jam=(detik%86400)/3600;
-	menit=(detik%3600)/60;
-	detik=detik%60;
+    hari=dtk/86400;
+	jam=(dtk%86400)/3600;
+	menit=(dtk%3600)/60;
+	jumdet=dtk%60;
 	
 	cout << endl;
 	cout << "hasil konversi:" <<endl;
-	cout << detik << " " << "detik" << " " << "=" << " "<< hari << " "<<"hari" <<" "<< jam <<" "<< "jam"<< " " << menit <<" "<< "menit"<<" " << detik <<" "<< "detik";
+	cout << dtk << " " << "detik" << " " << "=" << " "<< hari << " "<<"hari" <<"-"<< jam <<" "<< "jam"<< "  " << menit <<" "<< "menit"<<" " << jumdet <<" "<< "detik";
     
 }
+
 

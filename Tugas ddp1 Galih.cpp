@@ -2,20 +2,21 @@
 using namespace std;
 
 int main(){
-	long detik,totaldetik;
-	int jam ,menit;
+	long dtk,total;
+	int menit ,jam;
 	
-	cout << "masukan angka >1 (dalam satuan detik) :";
-	cin  >> detik;
+	cout << "masukan angka detik :";
+	cin  >> dtk;
 	
-	jam=(detik%86400)/3600;
-	menit=(detik%3600)/60;
-	totaldetik=detik%60;
+	jam=(dtk%86400)/3600;
+	menit=(dtk%3600)/60;
+	total=dtk%60;
 	
     cout <<endl;
     cout << "hasil konversi :" <<endl;
-	cout << detik <<" "<< "detik" <<" "<< "=" <<" "<< jam << " " << "jam" << " " << menit << " " << "menit" << " " << totaldetik << " " << "detik" <<endl;
+	cout << dtk<<" "<< "detik" <<" "<< "=" << jam << "jam" << menit << "menit" << total << "detik" <<endl;
 	
 	return 0;
 }
+
 
